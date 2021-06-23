@@ -4,10 +4,12 @@
 <h1>Que tal</h1>
 <p>Nombre: {{ nombre }}</p>
 <p>Edad: {{ edad }}</p>
-<p>Comidas Favoritas: {{ comidas.0 }}</p>
+<p>Comidas Favoritas de {{nombre}}: {{ comidas.0 }}</p>
 <ol>
     {% for comida in comidas %}
     <li> {{ comida }} </li>
     {% endfor%}
 </ol>
+<p> {{ nombre }} tiene un hijo llamado {{ hijo.nombre}} que tiene {{hijo.edad}} años y le encanta el siguiente personaje:</p>
+<p>BLIPPI</p>
 <img src="{% static 'core/img/blippi.jpg' %}"  alt="Blippi" /> 
