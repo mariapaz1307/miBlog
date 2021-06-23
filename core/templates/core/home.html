@@ -2,5 +2,12 @@
 
 <h1>Hola mundo</h1>
 <h1>Que tal</h1>
-
+<p>Nombre: {{ nombre }}</p>
+<p>Edad: {{ edad }}</p>
+<p>Comidas Favoritas: {{ comidas.0 }}</p>
+<ol>
+    {% for comida in comidas %}
+    <li> {{ comida }} </li>
+    {% endfor%}
+</ol>
 <img src="{% static 'core/img/blippi.jpg' %}"  alt="Blippi" /> 
